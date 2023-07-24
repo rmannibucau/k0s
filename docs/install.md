@@ -12,11 +12,13 @@ Though the Quick Start material is written for Debian/Ubuntu, you can use it for
 
 1. Download k0s
 
-    Run the k0s download script to download the latest stable version of k0s and make it executable from /usr/bin/k0s.
+    Run the k0s download script to download the latest stable version of k0s and make it executable from /usr/local/bin.
 
     ```shell
     curl -sSLf https://get.k0s.sh | sudo sh
     ```
+
+    NOTE: since `/usr/local/bin` is not always in the path of sudo users you can need to add it or use `/usr/local/bin/k0s` instead of `k0s` in next commands.
 
 2. Install k0s as a service
 
